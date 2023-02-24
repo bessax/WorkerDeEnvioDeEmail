@@ -12,6 +12,8 @@ namespace WorkerDeEnvioDeEmail
             _logger = logger;
         }
 
+        //par usar o gmail acesse o link https://myaccount.google.com/apppasswords?rapt=AEjHL4OUhJU8Lh-WPgNiYF2pkq3KpWyB5K60lY3N0Q_HaxZaaVGRYjdMfOa4nauClf0Xj0dR5DaZkJp5_puZ7UKU5ZUIkBMJyw
+        // e crie uma senha para usar no código.
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
