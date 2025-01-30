@@ -13,12 +13,12 @@ namespace WorkerDeEnvioDeEmail
         }
 
         //par usar o gmail acesse o link https://myaccount.google.com/apppasswords?rapt=AEjHL4OUhJU8Lh-WPgNiYF2pkq3KpWyB5K60lY3N0Q_HaxZaaVGRYjdMfOa4nauClf0Xj0dR5DaZkJp5_puZ7UKU5ZUIkBMJyw
-        // e crie uma senha para usar no código.
+        // e crie uma senha para usar no cÃ³digo.
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                // Configurações do servidor SMTP
+                // ConfiguraÃ§Ãµes do servidor SMTP
                 var smtpClient = new SmtpClient("smtp.gmail.com")
                 {
                     Port = 587,
@@ -29,14 +29,14 @@ namespace WorkerDeEnvioDeEmail
                    
                 };
 
-                // Configurações do e-mail
+                // ConfiguraÃ§Ãµes do e-mail
                 var mailMessage = new MailMessage
                 {
                     From = new MailAddress("meu_email@gmail.com"),
-                    Subject = "[Worker Service - Serviço que manda e-mail]",
+                    Subject = "[Worker Service - ServiÃ§o que manda e-mail]",
                     Body = "Super teste!!!!!",
                 };
-                mailMessage.To.Add("andrebessax@gmail.com");
+                mailMessage.To.Add("andreb@gmail.com");
 
                 // Enviar o e-mail
                 smtpClient.Send(mailMessage);
