@@ -126,9 +126,6 @@ e leia os valores via `IConfiguration` (em produção, use variáveis de ambient
 - [ ] Extrair o envio para uma interface (`IEmailSender`) e injetar via DI, facilitando testes.
 - [ ] Buscar e-mails a enviar de uma fila ou banco de dados, em vez de uma mensagem fixa.
 - [ ] Adicionar suporte a Docker.
-## 🤝 Contribuindo
- 
-Contribuições são muito bem-vindas! Abra uma *issue* para discutir ideias ou envie um *pull request*.
  
 ## 📄 Licença
  
